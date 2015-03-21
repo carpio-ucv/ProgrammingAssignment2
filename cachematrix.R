@@ -1,7 +1,6 @@
-## The functions allows to 
-## functions do
-
-## This function creates a special "matrix" object that can cache its inverse.
+## GENERAL DESCRIPTION
+## The functions allows to avoid time-consuming computations by saving in a different environment the inverse of a matrix
+## being calculated. Then it can be recalled from that environment (instead of calculate it againa) when it is again needed.
 
 makeCacheMatrix <- function(x = matrix()) {
  mi <- NULL                             
