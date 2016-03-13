@@ -9,7 +9,7 @@
 #####################
 
 # This function takes a square matrix as argument (inversable)
-# and cache the inverse. Speciflicle is does the following: 
+# and cache its inverse. Speciflicaly is does the following: 
 
 #set the value of the matrix
 #get the value of the matrix
