@@ -9,7 +9,7 @@
 #####################
 
 # This function takes a square matrix as argument (inversable)
-# and cache its inverse. Speciflicaly is does the following: 
+# and cache its inverse. Speciflicaly it does the following: 
 
 #set the value of the matrix
 #get the value of the matrix
@@ -30,7 +30,7 @@ makeCacheMatrix <- function(x) {
         setinv <- function(solve) mat <<- solve
 # Get inverse of the matrix 
         getinv <- function() mat        
-# Create a list copntai8ning the 4 previous variables
+# Create a list copntaining outcomes from the 4 previous subfunctions
         list(set = set, get = get, setinv = setinv,
              getinv = getinv)
 }
@@ -54,7 +54,7 @@ cacheSolve <- function(x, ...) {
         }
 # Store original matrix in "data"
         data <- x$get()
-# Estimate the inverse of the matrix (when there is no cache)
+# Estimate the inverse of the matrix (when there it has not been cached)
         inv <- solve(data)
         x$setinv(inv)
 # Return inverse matrix
